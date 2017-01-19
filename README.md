@@ -6,13 +6,13 @@ A tool for viewing hex dumps of buffers in your browser
 
 ## Usage
 
-1. Include hexspector in your page
+First include hexspector in your page
 
 ```html
-<script src="https://unpkg.com/hexspector@1.0.0/"></script>
+<script src="https://unpkg.com/hexspector@latest"></script>
 ```
 
-2. Enter the typed array or array buffer you'd like to inspect
+Then enter the typed array or array buffer you'd like to inspect
 
 # [Live Demo](https://benjaminbenben.com/hexspector/)
 
