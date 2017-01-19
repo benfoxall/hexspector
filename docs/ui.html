@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ui test</title>
+    <style media="screen">
+      .hexspector {
+        background: aquamarine;
+        font-family: sans-serif;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        font-family: monospace;
+      }
+      label {
+        display: flex;
+        font-size: 1rem;
+      }
+      label span {
+        padding-right: .2rem;
+        font-weight: bold;
+      }
+      label input {
+        flex: 1;
+        border: none;
+        font-size: 1rem;
+        background: rgba(255,255,255,0.95);
+        font-family: monospace;
+      }
+      .hexspector, .panel, label, span {
+        margin: 2px;
+      }
+      .panel {
+        flex: 1;
+        background: rgba(255,255,255,0.95);
+        margin-top:0
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="hexspector">
+
+      <label>
+        <span>hexspector</span>
+        <input type="text" placeholder="window.yourArrayBuffer"/>
+      </label>
+
+      <div class="panel">
+
+      </div>
+    </div>
+
+  </body>
+</html>
