@@ -1,0 +1,54 @@
+<div class="hexspector {{expanded ? '' : 'collapsed'}}">
+
+  <label>
+    <span>hexspector</span>
+    <input type="text" placeholder="window.yourArrayBuffer"
+    bind:value="eval" size="25"/>
+  </label>
+
+  <div class="panel" ref:panel></div>
+</div>
+
+
+<style>
+  .hexspector {
+    
+
+    background: aquamarine;
+    font-family: sans-serif;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+
+    width: 80vw;
+  }
+  .hexspector.collapsed {
+    height: auto;
+    width: auto;
+  }
+  label {
+    display: flex;
+    font-size: 1rem;
+  }
+  label span {
+    padding-right: .2rem;
+    font-weight: bold;
+  }
+  label input {
+    flex: 1;
+    border: none;
+    font-size: 1rem;
+    background: rgba(255,255,255,0.95);
+    font-family: monospace;
+  }
+  .panel, label, span {
+    margin: 2px;
+  }
+  .panel {
+    flex: 1;
+    background: rgba(255,255,255,0.95);
+    margin-top:0;
+    overflow: scroll
+  }
+</style>
