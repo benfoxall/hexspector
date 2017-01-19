@@ -1,6 +1,6 @@
 {
   "name": "hexspector",
-  "version": "1.0.0-nope",
+  "version": "1.0.0",
   "description": "a hex viewer for your browser",
   "main": "docs/hexspector.js",
   "main:next": "src/main.js",
