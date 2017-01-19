@@ -3,10 +3,65 @@
   <head>
     <meta charset="utf-8">
     <title>Hexspector</title>
+    <style media="screen">
+      body {
+        font-family: sans-serif;
+      }
+    </style>
   </head>
   <body>
-
     <script src="hexspector.js"></script>
+
+
+
+    <h3>Examples</h3>
+    <ul>
+      <li>
+        <a href="javascript:hexspector('fetchResponse')">
+          fetch response
+        </a>
+      </li>
+      <li>
+        <a href="javascript:hexspector('rand')">
+          random array
+        </a>
+      </li>
+      <li>
+        <a href="javascript:hexspector('imageData.data')">
+          canvas imageData
+        </a>
+      </li>
+    </ul>
+
+
+    <script>
+
+    // load in some example data
+
+    var fetchResponse
+    fetch('.')
+      .then(function(res){
+        return res.arrayBuffer()
+      })
+      .then(function(buffer){
+        fetchResponse = buffer
+      })
+
+    var rand = new Uint8Array(2048)
+    for (var i = 0; i < rand.length; i++) {
+      rand[i] = Math.random() * (i/rand.length) * 255
+    }
+
+
+    var canvas = document.createElement('canvas')
+    var ctx = canvas.getContext('2d')
+    ctx.fillStyle = '#fc0'
+    ctx.fillRect(2,2,10,10)
+    document.body.appendChild(canvas)
+
+    var imageData = ctx.getImageData(0,0,20,20)
+
+    </script>
 
   </body>
 </html>
