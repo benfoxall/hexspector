@@ -2,7 +2,7 @@
 
 A tool for viewing hex dumps of buffers in your browser
 
-<img src="docs/screenshot.png" height="400" />
+<img src="https://benjaminbenben.com/hexspector/screenshot.png" height="400" />
 
 ## Usage
 
