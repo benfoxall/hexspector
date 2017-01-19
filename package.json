@@ -1,0 +1,33 @@
+{
+  "name": "hexspector",
+  "version": "0.0.1",
+  "description": "a hex viewer for your browser",
+  "main": "docs/hexspector.js",
+  "main:next": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benfoxall/hexspector.git"
+  },
+  "keywords": [
+    "hex",
+    "inspector",
+    "array",
+    "buffers"
+  ],
+  "author": "Ben Foxall (@benjaminbenben)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benfoxall/hexspector/issues"
+  },
+  "homepage": "https://github.com/benfoxall/hexspector#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^3.13.1",
+    "rollup": "^0.41.4",
+    "rollup-plugin-buble": "^0.15.0",
+    "rollup-watch": "^3.2.2"
+  }
+}
